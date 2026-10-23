@@ -1,0 +1,21 @@
+name: ZokoDuels
+version: 1.0.0
+main: ru.zokocraft.duels.DuelsPlugin
+api-version: '1.21'
+description: Дуэли 1v1 и 2v2 с аренами
+softdepend: [Vault]
+commands:
+  duel:
+    description: Меню дуэлей / личная дуэль
+    usage: /duel [ник] [ставка]
+    aliases: [duels]
+  duelarena:
+    description: Арены и команда
+    usage: /duelarena <create|delete|setspawn|delspawn|list|party>
+permissions:
+  zokoduels.admin:
+    description: Управление аренами
+    default: op
+  zokoduels.bypass:
+    description: Команды во время дуэли
+    default: op

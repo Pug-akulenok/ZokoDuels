@@ -1,0 +1,23 @@
+# Время (в секундах)
+prepare-seconds: 30     # подготовка перед боем
+fight-seconds: 60       # обратный отсчёт до конца дуэли
+end-seconds: 8          # пауза после победы (подобрать выпавшие вещи)
+request-expire-seconds: 30
+
+# Выпадают ли вещи в обычной и командной дуэли (в личной выбирает игрок)
+normal:
+  drop-items: false
+team:
+  drop-items: false
+
+rating:
+  start: 100
+  per-win: 5                  # за победу; за поражение рейтинг не снижается
+  personal-duel-counts: false # считать ли личные дуэли в рейтинг
+
+bet:
+  min: 10
+  max: 100000
+
+# Запретить ломать/ставить блоки во время дуэли
+protect-arena: true
